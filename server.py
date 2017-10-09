@@ -1,7 +1,7 @@
 import socket
 
 s = socket.socket()
-host = "172.26.240.105"
+host = socket.gethostname()
 port = 1424
 
 s.bind((host, port))
@@ -17,3 +17,5 @@ while True:
         break
 
    c.send(cmd.encode())
+
+##172.26.240.105
